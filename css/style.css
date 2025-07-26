@@ -13,6 +13,9 @@ nav {
   font-size: 26px;
   padding: 15px;
   cursor: pointer;
+  float: right;
+  font-weight: bold;
+  width: 30px;
 }
 .navbar {
   list-style: none;
