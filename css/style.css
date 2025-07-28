@@ -17,12 +17,16 @@ nav {
   font-weight: bold;
   width: 30px;
 }
+#navbar {
+  text-align: center;
+}
 .navbar {
   list-style: none;
   margin: 0;
   padding: 0;
   display: inline-flex;
   flex-wrap: wrap;
+  margin-left: 120px;
 }
 .navbar li {
   position: relative;
@@ -34,7 +38,6 @@ nav {
   text-decoration: none;
   padding: 0 20px;
   line-height: 80px;
-  margin-left: 120px;
 }
 .submenu {
   display: none;
