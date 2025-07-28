@@ -20,7 +20,7 @@ nav {
 }
 #navbar {
   text-align: center;
-  border-bottom: 1px solid #AAA;
+  border-bottom: 1px solid #777;
   min-height: 80px;
 }
 .navbar {
@@ -36,7 +36,7 @@ nav {
 }
 .navbar > li > a {
   display: block;
-  color: #333;
+  color: #FFF;
   font-weight: bold;
   text-decoration: none;
   padding: 0 20px;
@@ -66,14 +66,14 @@ nav {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #F0F0F0;
+    background-color: #777;
     margin-left: 0;
   }
   .navbar.active {
     display: flex;
   }
   .navbar li:first-child {
-    border-top: 1px solid #AAA;
+    border-top: 1px solid #777;
   }
   .navbar > li > a {
     line-height: 50px;
