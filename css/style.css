@@ -24,6 +24,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   background-color: #333;
+  height: 80px;
 }
 .navbar li {
   position: relative;
@@ -33,6 +34,8 @@ nav {
   padding: 15px;
   color: #fff;
   text-decoration: none;
+  padding: 0;
+  line-height: 80px;
 }
 .submenu {
   display: none;
