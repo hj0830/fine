@@ -21,7 +21,7 @@ nav {
 #navbar {
   text-align: center;
   border-bottom: 1px solid #AAA;
-  height: 80px;
+  min-height: 80px;
 }
 .navbar {
   list-style: none;
