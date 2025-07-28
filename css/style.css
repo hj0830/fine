@@ -11,12 +11,12 @@ nav {
 .menu-toggle {
   display: none;
   font-size: 33px;
-  padding: 15px;
   cursor: pointer;
   float: right;
   font-weight: bold;
   width: 80px;
   line-height: 80px;
+  text-align: center;
 }
 #navbar {
   text-align: center;
@@ -57,18 +57,26 @@ nav {
   .menu-toggle {
     display: block;
   }
+  #navbar {
+    text-align: left;
+  }
   .navbar {
     display: none;
     flex-direction: column;
     width: 100%;
     background-color: #F0F0F0;
+    margin-left: 0;
   }
   .navbar.active {
     display: flex;
   }
   .navbar li {
-    border-top: 1px solid #444;
+    border-top: 1px solid #AAA;
   }
+  .navbar > li > a {
+    line-height: 50px;
+  }
+  
   .navbar li:hover .submenu {
     display: none;
   }
