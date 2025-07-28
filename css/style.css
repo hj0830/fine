@@ -10,12 +10,13 @@ nav {
 }
 .menu-toggle {
   display: none;
-  font-size: 26px;
+  font-size: 33px;
   padding: 15px;
   cursor: pointer;
   float: right;
   font-weight: bold;
-  width: 30px;
+  width: 80px;
+  line-height: 80px;
 }
 #navbar {
   text-align: center;
