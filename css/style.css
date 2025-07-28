@@ -20,7 +20,7 @@ nav {
 }
 #navbar {
   text-align: center;
-  border-bottom: 1px solid #F0F0F0;
+  border-bottom: 1px solid #AAA;
   height: 80px;
 }
 .navbar {
@@ -72,8 +72,8 @@ nav {
   .navbar.active {
     display: flex;
   }
-  .navbar li {
-    border-bottom: 1px solid #AAA;
+  .navbar li:first-child {
+    border-top: 1px solid #AAA;
   }
   .navbar > li > a {
     line-height: 50px;
