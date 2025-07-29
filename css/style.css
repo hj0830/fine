@@ -15,13 +15,13 @@ nav {
   float: right;
   font-weight: bold;
   width: 80px;
-  line-height: 80px;
+  line-height: 60px;
   text-align: center;
 }
 #navbar {
-  text-align: center;
-  border-bottom: 1px solid #777;
   min-height: 80px;
+  border-bottom: 1px solid #CCC;
+  background:url(../image/ci.png) no-repeat 18px 20px;
 }
 .navbar {
   list-style: none;
@@ -29,14 +29,14 @@ nav {
   padding: 0;
   display: inline-flex;
   flex-wrap: wrap;
-  margin-left: 120px;
+  margin-left: 140px;
 }
 .navbar li {
   position: relative;
 }
 .navbar > li > a {
   display: block;
-  color: #FFF;
+  color: #333;
   font-weight: bold;
   text-decoration: none;
   padding: 0 20px;
@@ -55,30 +55,54 @@ nav {
 .navbar li:hover .submenu {
   display: block;
 }
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+h1 > span {
+  width: 200px;
+  background-color: #1c2d64;
+  color: #fff;
+  display: inline-block;
+  line-height: 60px;
+  border-radius: 30px;
+}
+@media (min-width: 769px) {
+  .navbar > li:hover > a {
+    color: #4564ca;
+  }
+}
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
   #navbar {
-    text-align: left;
+    min-height: 60px;
+    background-position-y: 12px;
   }
+  #navbar:has(.navbar.active) {
+    border: none;
+  }
+
   .navbar {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #777;
+    background-color: #2e48a0;
     margin-left: 0;
+    box-sizing: border-box;    
   }
   .navbar.active {
     display: flex;
   }
-  .navbar li:first-child {
-    border-top: 1px solid #777;
+  .navbar > li{
+    border-top: 1px solid #172552;
+    border-bottom: 1px solid #3e59b3;
   }
   .navbar > li > a {
     line-height: 50px;
+    color: #FFF;
   }
-  
   .navbar li:hover .submenu {
     display: none;
   }
