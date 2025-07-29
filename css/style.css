@@ -21,7 +21,11 @@ nav {
 #navbar {
   min-height: 80px;
   border-bottom: 1px solid #CCC;
-  background:url(../image/ci.png) no-repeat 18px 20px;
+}
+#navbar > a {
+  position: absolute;
+  top: 18px;
+  left: 20px;
 }
 .navbar {
   list-style: none;
@@ -57,15 +61,15 @@ nav {
 }
 h1 {
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
 }
 h1 > span {
-  width: 200px;
+  width: 180px;
   background-color: #1c2d64;
   color: #fff;
   display: inline-block;
-  line-height: 60px;
-  border-radius: 30px;
+  line-height: 50px;
+  border-radius: 25px;
 }
 @media (min-width: 769px) {
   .navbar > li:hover > a {
@@ -78,12 +82,13 @@ h1 > span {
   }
   #navbar {
     min-height: 60px;
-    background-position-y: 12px;
   }
   #navbar:has(.navbar.active) {
     border: none;
   }
-
+  #navbar > a {
+    top: 12px;
+  }
   .navbar {
     display: none;
     flex-direction: column;
