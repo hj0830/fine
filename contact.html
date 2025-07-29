@@ -6,11 +6,26 @@
   <title>화인전자 주식회사</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/nav.js" defer></script>
-</head>
+  <style>
+    main > div {
+      width:100%;
+      max-width:800px;
+      aspect-ratio:2/1;
+      background:url(./image/map.png) no-repeat center;
+      background-size: 150%;
+    }
+    @media (max-width: 600px) {
+      main > div {
+        aspect-ratio: 1/1;
+        background-size: 300%;
+      }
+    }
+  </style>
 <body>
   <div id="navbar"></div>
-  <main style="padding: 20px;">
+  <main style="padding:20px;">
     <h1><span>Contact</span></h1>
+    <div></div>
     <p>인천광역시 계양구 아나지로374번길 11 성우미크론 3동 1층</p>
     <p>대표전화: 032-504-8675~6</p>
     <p>영업/제품문의: 010-8865-9908</p>
