@@ -16,7 +16,7 @@
     function resizeImages() {
       const images = document.querySelectorAll('main img');
       images.forEach(img => {
-        img.style.width = document.getElementsByTagName('main')[0].clientWidth > 460 ? '200px' : (document.getElementsByTagName('main')[0].clientWidth/2-30) + 'px';
+        img.style.width = document.getElementsByTagName('main')[0].clientWidth > 450 ? '200px' : (document.getElementsByTagName('main')[0].clientWidth/2-25) + 'px';
       });
     }
   </script>
@@ -33,8 +33,8 @@
 </head>
 <body>
   <div id="navbar"></div>
-  <main style="padding:20px;">
-    <h1><span>제품소개</span></h1>
+  <main style="padding:20px 10px 20px 20px;">
+    <h1 style="margin-left:-10px"><span>제품소개</span></h1>
     <h2>Transformer</h2>
     <p><img src="./image/trans01.png"><img src="./image/trans02.png"><img src="./image/trans03.png"><img src="./image/trans04.png"><img src="./image/trans05.png"></p>
     <h2>공진형(LLC)</h2>
